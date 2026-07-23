@@ -131,6 +131,9 @@ GameObject:
   - component: {fileID: 178407780}
   - component: {fileID: 178407779}
   - component: {fileID: 178407778}
+  - component: {fileID: 178407783}
+  - component: {fileID: 178407782}
+  - component: {fileID: 178407781}
   m_Layer: 0
   m_Name: PlayerUnit
   m_TagString: Untagged
@@ -227,6 +230,45 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178407776}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &178407781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178407776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02aa7b5cd3fd83f41a333c3cf6fe43c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _teamId: 1
+--- !u!114 &178407782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178407776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 522a92715a2003647956198b4cce2395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &178407783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178407776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096d053fa5cfe84d8ea692aa6a5dcb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 0
+  _currentHealth: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
