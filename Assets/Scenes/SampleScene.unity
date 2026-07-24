@@ -892,6 +892,7 @@ GameObject:
   - component: {fileID: 1316013304}
   - component: {fileID: 1316013303}
   - component: {fileID: 1316013302}
+  - component: {fileID: 1316013309}
   m_Layer: 0
   m_Name: EnemyUnit
   m_TagString: Untagged
@@ -1049,6 +1050,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316013300}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1316013309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316013300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01cc2550a6ddbb14c807744c3d2576b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentTarget: {fileID: 0}
+  _viewDistance: 8
+  _priorities:
+  - Enemy: Base
+    Priority: 1
+  - Enemy: Crip
+    Priority: 20
 --- !u!1 &1380983328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,6 +1147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5920b20ad5958cf45b19147b9f755d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _amountTeams: 2
   _allUnits: []
 --- !u!1 &1574511346
 GameObject:
@@ -1144,6 +1165,7 @@ GameObject:
   - component: {fileID: 1574511350}
   - component: {fileID: 1574511349}
   - component: {fileID: 1574511348}
+  - component: {fileID: 1574511355}
   m_Layer: 0
   m_Name: PlayerUnit
   m_TagString: Untagged
@@ -1301,6 +1323,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574511346}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1574511355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574511346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01cc2550a6ddbb14c807744c3d2576b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentTarget: {fileID: 0}
+  _viewDistance: 8
+  _priorities:
+  - Enemy: Base
+    Priority: 1
+  - Enemy: Crip
+    Priority: 20
 --- !u!1001 &4888996030917622425
 PrefabInstance:
   m_ObjectHideFlags: 0

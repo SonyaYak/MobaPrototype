@@ -15,6 +15,12 @@ public abstract class MoveableUnit : Unit
         _navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
+    public override void Initialize()
+    {
+        base.Initialize();
+        //SetStopDistance();
+    }
+
     protected void SetStopDistance(float distance) => _navMeshAgent.stoppingDistance = distance;
 
     // NavMeshAgent.SetDestination takes exact 3D coordinates on the baked mesh.

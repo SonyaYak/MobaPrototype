@@ -18,7 +18,7 @@ public abstract class Unit : MonoBehaviour
         _team = GetComponent<TeamTag>();
     }
 
-    public void Initialize()
+    public virtual void Initialize()
     {
         _health.Initialize();
         _health.onDie += Die;
@@ -31,6 +31,7 @@ public abstract class Unit : MonoBehaviour
         Destroy(gameObject, .1f);
     }
 
+    public string GetName() => gameObject.name.Substring(0, gameObject.name.IndexOf("("));
     public TeamTag GetTeam() => _team;
     public Health GetHealth() =>  _health;
 

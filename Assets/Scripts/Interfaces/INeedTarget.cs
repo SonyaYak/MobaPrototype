@@ -1,6 +1,8 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public interface INeedTarget
 {
-    void SetTarget(Unit targets);
+    float GetViewDistance();
+    void SetPotentialTargets(List<Unit> potentialTargets);
 }
