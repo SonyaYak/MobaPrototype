@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class Base : Unit
 {
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
         Initialize();
     }
 }
