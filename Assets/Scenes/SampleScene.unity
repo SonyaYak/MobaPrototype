@@ -893,6 +893,8 @@ GameObject:
   - component: {fileID: 1316013303}
   - component: {fileID: 1316013302}
   - component: {fileID: 1316013309}
+  - component: {fileID: 1316013311}
+  - component: {fileID: 1316013310}
   m_Layer: 0
   m_Name: EnemyUnit
   m_TagString: Untagged
@@ -964,10 +966,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 10
+  m_Acceleration: 999
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 999
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -1069,6 +1071,35 @@ MonoBehaviour:
     Priority: 1
   - Enemy: Crip
     Priority: 20
+--- !u!114 &1316013310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316013300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2513a8ae37019e4ea095f7316fcb67e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentTarget: {fileID: 0}
+--- !u!114 &1316013311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316013300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751923055ebde0e438033ae58840ba3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon:
+    _attackRange: 2
+    _damageValue: 10
+    _attackInterval: 0.2
 --- !u!1 &1380983328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,6 +1197,8 @@ GameObject:
   - component: {fileID: 1574511349}
   - component: {fileID: 1574511348}
   - component: {fileID: 1574511355}
+  - component: {fileID: 1574511357}
+  - component: {fileID: 1574511356}
   m_Layer: 0
   m_Name: PlayerUnit
   m_TagString: Untagged
@@ -1237,10 +1270,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 10
+  m_Acceleration: 999
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 999
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -1342,6 +1375,35 @@ MonoBehaviour:
     Priority: 1
   - Enemy: Crip
     Priority: 20
+--- !u!114 &1574511356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574511346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2513a8ae37019e4ea095f7316fcb67e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentTarget: {fileID: 0}
+--- !u!114 &1574511357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574511346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751923055ebde0e438033ae58840ba3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon:
+    _attackRange: 2
+    _damageValue: 10
+    _attackInterval: 0.2
 --- !u!1001 &4888996030917622425
 PrefabInstance:
   m_ObjectHideFlags: 0
