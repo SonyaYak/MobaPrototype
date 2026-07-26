@@ -3,7 +3,7 @@ using UnityEngine;
 public class CripFactory : MonoBehaviour
 {
     [Header("Prefab Settings")]
-    [SerializeField] private Crip _prefab;
+    [SerializeField] private AIUnit _prefab;
     [SerializeField] private TeamTag _teamTag;
 
     [Header("Spawn Settings")]
