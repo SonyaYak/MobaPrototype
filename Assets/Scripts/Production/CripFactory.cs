@@ -30,6 +30,11 @@ public class CripFactory : MonoBehaviour
             // Activates the object after instantiation
             crip.gameObject.SetActive(true);
             crip.GetTeam().SetTeamId(_teamTag.GetTeamId());
+            // Grab the Health component from the new creep and register it in the session manager
+            if (GameSessionManager.Instance != null)
+            {
+                GameSessionManager.Instance.RegisterUnitForScore(crip.GetComponent<Health>());
+            }
             crip.Initialize();
         }
     }
