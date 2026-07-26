@@ -21,8 +21,17 @@ public abstract class MoveableUnit : Unit
     public override void Initialize()
     {
         base.Initialize();
-        transform.SetParent(null);
-        //SetStopDistance();
+
+        GameObject unitesContainer = GameObject.Find("Unites");
+
+        if (unitesContainer != null)
+        {
+            transform.SetParent(unitesContainer.transform);
+        }
+        else
+        {
+            transform.SetParent(null);
+        }
     }
 
 
