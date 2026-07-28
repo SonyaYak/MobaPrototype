@@ -34,6 +34,7 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
+
         _dying = true;
         onDie?.Invoke();
     }
